@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.xst" -ofn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.syr" 
+xst -intstyle ise -ifn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.xst" -ofn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.syr" 
+xst -intstyle ise -ifn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.xst" -ofn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.syr" 
+xst -intstyle ise -ifn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.xst" -ofn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.syr" 
+xst -intstyle ise -ifn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.xst" -ofn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.syr" 
+xst -intstyle ise -ifn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.xst" -ofn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc6vcx75t-ff484-2 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc6vcx75t-ff484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -mt off ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
+xst -intstyle ise -ifn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.xst" -ofn "C:/Users/Sina/Desktop/cadise/cadtest/ANN.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ANN.ucf -p xc6vcx75t-ff484-2 ANN.ngc ANN.ngd  
+map -intstyle ise -p xc6vcx75t-ff484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ANN_map.ncd ANN.ngd ANN.pcf 
+par -w -intstyle ise -ol high -mt off ANN_map.ncd ANN.ncd ANN.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ANN.twx ANN.ncd -o ANN.twr ANN.pcf -ucf ANN.ucf 
